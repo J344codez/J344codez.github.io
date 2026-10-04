@@ -1,23 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8" >
-        <title>My First Webpage</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <style>
+            .name {
+                font-family: Arial;
+                color: white;
+                position: absolute;
+                top: 30%;
+                left: 10%;
+
+                @media only screen and (max-width: 720px) {
+                    top: 50%;
+                }
+            }
+            .icons {
+                font-family: Arial;
+                color: white;
+                position: absolute;
+                top: 10%;
+                right: 10%;
+            }
+            div.absolute {
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                object-fit: cover;
+            }
+        </style>
+        <meta charset="UTF-8">
     </head>
     <body>
-        <h1> Jefferson Mauricio Almeida-Pires</h1>
-        <div>
-            <img src="images/profile pic.jpg" width="150" height="200">
+        <h1 class="name"> Jefferson Mauricio Almeida-Pires</h1>
+        <h2 class="icons">
+            <i class="fa-solid fa-circle-user"></i>
+            About Me<br>
+            <i class="fa-solid fa-book"></i>
+            Resume<br>
+            <i class="fa-solid fa-gamepad"></i>
+            Projects<br>
+            <i class="fa-solid fa-hammer"></i>
+            Experience
+        </h2>
+        <div class="absolute">
+            <video width="100%" height="100%" autoplay loop muted> 
+                <source src ="images/background.mp4" type="video/mp4">
+            </video>
         </div>
-        <p> Jefferson is a student at Bridgewater State University<br>
-            currently pursuing a degree in Computer Science. He is<br>
-            passionate about finding the bridge between environmental<br>
-            conservation, medical practice, and technology. Here are<br>
-            ways to learn more about him:
-        </p>
-        <p>
-        <a href="https://www.linkedin.com/in/jefferson-m-almeida-pires-816b21256" target="_blank">LinkedIn</a>
-        <a href="https://github.com/J344codez" target = " blank">GitHub</a>
-        </p>
     </body>
-</html>
+
+
