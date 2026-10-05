@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title>Projects</title>
+        <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                background-color: green
+            }
+            .project{
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                
+
+            }
+            .project video{
+                width: 500px;
+                display: block;
+                border-radius: 8px;
+                margin-bottom: 15px;
+            }
+            .project description{
+                max-height: 120px;
+                overflow-y: auto;
+            }
+            @media (max-width: 720px){
+                .project{
+                    padding: 16px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html">Home</a>
+            <h1>My Projects</h1>
+            <div class = "row justify-content-center">
+                <div class = "col-12 col-md-8">
+                    <article class = "project">
+                        <h2>Affirmation App</h2>
+                        <video controls preload="metadata">
+                            <source src="images/affirm_demo.mp4" type="video/mp4">
+                        </video>
+                        <description>
+                            Designed and developed a desktop GUI application using JavaSwing, implementing file-based affirmation storage
+                            ,user input, and random message generation while applying object-oriented programming concepts such as
+                            inheritance and polymorphism.
+                        </description>
+                    </article>
+
+                    <article class = "project">
+                        <h2>COMP 335 Final Project</h2>
+                        <video controls preload="metadata">
+                            <source src="" type="video/mp4">
+                        </video>
+                        <description>
+                            This is a future group project idea, I plan on making a Sustainability tracker using
+                            all that I've learned in COMP 335.
+                        </description>
+                    </article>
+
+                    <article class = "project">
+                        <h2>Rental App</h2>
+                        <video controls preload="metadata">
+                            <source src="images/rental_Demo.mp4" type="video/mp4">
+                        </video>
+                        <description>
+                            Designed and developed a rental management application using Java Swing
+                            that provided an intuitice interface for
+                            browsing and managing rental listings. The application incorporated user
+                            input forms, dropdown menus, and interactive buttons
+                            to streamline rental transactions and improve the user experience.
+                            Object-oriented programming principles were applied to create a scalable,
+                            maintainable systen for handling rental data, user interactions, and core
+                            business functionality.
+                            
+                            
+                        </description>
+                    </article>
+            </div>        
+        </header>
+    </body>
+</html>

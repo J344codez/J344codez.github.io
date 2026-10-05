@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <script src ="javascripts/index.js"></script>
         <style>
             .name {
                 font-family: Arial;
@@ -18,8 +19,16 @@
                 font-family: Arial;
                 color: white;
                 position: absolute;
-                top: 30%;
+                top: 25%;
                 right: 10%;
+                line-height: 2.5;
+            }
+            .projects-button {
+                color: inherit;
+                text-decoration: none;
+            }
+            .projects-button:hover{
+                color:green;
             }
             div.absolute {
                 position: absolute;
@@ -42,8 +51,10 @@
             About Me<br>
             <i class="fa-solid fa-book"></i>
             Resume<br>
-            <i class="fa-solid fa-gamepad"></i>
-            Projects<br>
+            <a class = "projects-button" href = "project.html" target = " blank" rel = "noopener noreferrer">
+                <i class="fa-solid fa-gamepad"></i>
+                Projects<br>
+            </a>
             <i class="fa-solid fa-hammer"></i>
             Experience
         </h2>
